@@ -4,6 +4,7 @@
 */
 
 function multiply(a, b) {
+	return a * b;
 
 }
 
@@ -15,6 +16,14 @@ function multiply(a, b) {
 */
 
 function power(base, exponent) {
+		
+		counter=1;
+		
+		for(var i=0; i < exponent ; i++){
+			counter=(multiply(base, counter));
+
+		}
+		return counter;
 
 }
 

@@ -4,8 +4,11 @@
 */
 
 function max(a, b) {
-
+	if (a >= b){
+		return a;
+	}else return b;
 }
+
 
 /*
   This function should accept THREE numbers as parameters.
@@ -14,6 +17,9 @@ function max(a, b) {
 */
 
 function maxOfThree(a, b, c) {
+	var frustrated = max(a, b);
+	var frustrated = max(frustrated, c);
 
+	return frustrated;
+	
 }
-
